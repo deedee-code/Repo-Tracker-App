@@ -9,7 +9,7 @@ const router = express.Router();
 router.post("/activities", githubWebhook);
 router.get("/activities", allActivities);
 router.get("/activities/:id", activityById);
-router.get("activities/:username", activityByUsername)
+router.get("/activities/username/:username", activityByUsername)
 
 
 module.exports = router;
