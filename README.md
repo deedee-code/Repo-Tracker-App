@@ -4,7 +4,7 @@ A tracking app that tracks every person that checks out this repo and their acti
 
 ## Install & Run the code
 
-- Clone this repo: https://github.com/deedee-code/Repo-Tracker-App.git
+- Clone this repo: git clone https://github.com/deedee-code/Repo-Tracker-App.git
 - cd Repo-Tracker-App
 - npm install
 - npm run start
@@ -12,6 +12,7 @@ A tracking app that tracks every person that checks out this repo and their acti
 ## Requirement
 
 - Nodejs
+- Expressjs
 - Mongoose
 - GitHub
 - Ngrok
