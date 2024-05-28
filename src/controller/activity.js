@@ -1,11 +1,8 @@
 const Event = require("../app.model")
 
-const githubWebhook = async (req, res) => {
+const trackActivities = async (req, res) => {
     const event = req.headers['x-github-event'];
     const payload = req.body;
-
-    console.log(`Received event: ${event}`);
-    console.log('Payload:', payload);
 
     let username = '';
 
@@ -65,5 +62,5 @@ const githubWebhook = async (req, res) => {
 }
 
 module.exports = {
-    githubWebhook
+    trackActivities
 }
