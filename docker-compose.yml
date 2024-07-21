@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  repo_tracker:
+    build: .
+    ports:
+      - "3500:3500"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=${MONGO_URI}
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+volumes:
+  mongo_data:
